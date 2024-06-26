@@ -9,6 +9,7 @@ import { WagmiProvider } from 'wagmi';
 import { config } from "@/config/wagmi/createConfig";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import '@rainbow-me/rainbowkit/styles.css'
+import Layout from '@/components/layout';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,9 @@ export default function RootLayout({
         <WagmiProvider config={config}>
           <QueryClientProvider client={queryClient}>
             <RainbowKitProvider>
+            <Layout>
               {children}
+            </Layout>
             </RainbowKitProvider>
           </QueryClientProvider>
         </WagmiProvider>
