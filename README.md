@@ -1,5 +1,8 @@
 # web3-hackathon-template
 
+
+Frontend using  Wagmi, Tailwind CSS, RainbowKIT, TanStack Query.
+
 ```
 my-dapp/
 ├── contracts/
